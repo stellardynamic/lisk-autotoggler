@@ -1,4 +1,3 @@
-import urllib
 import json
 import datetime 
 import requests
@@ -21,8 +20,8 @@ publickey = ''
 
 def main():
 	url = node + network_port + '/api/node/status/forging'
-	response = urllib.urlopen(url)
-	json_data = json.loads(response.read())
+	response = requests.get(url)
+	json_data = response.json()
 
 
 	if json_data['data'][0]['forging'] == True:
@@ -40,7 +39,7 @@ def main():
 		message = "Forging was disabled. Toggled status to 'true'."
 
 
-	with open("node-checker_log.txt", "a") as text_file:
+	with open("lisk-autotoggle.log", "a") as text_file:
 		text_file.write("%s - %s\n" % (datetime.datetime.now(), message))
 	
 	

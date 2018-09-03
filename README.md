@@ -1,6 +1,5 @@
 # Lisk Auto-Toggler
-##### Current version: 1.0.1
-##### Platform: Ubuntu
+##### Current version: 1.0.2
 
 A script that checks the forging status of your node and enables it if required. Appends a new log entry each time it is run. 
 
@@ -23,8 +22,8 @@ crontab -e
 Add line (run script every 5 minutes):
 
 ```
-*/5 * * * * /usr/bin/python [path to lisk-autotoggle.py here]
+*/5 * * * * /usr/bin/python [path to lisk-autotoggler.py here]
 ```
 
 #### ..or run the .py script manually:
-$ python lisk-autotoggle.py
+$ python lisk-autotoggler.py

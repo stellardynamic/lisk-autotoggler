@@ -1,10 +1,10 @@
 # Lisk Auto-Toggler
-##### Current version: 1.0
+##### Current version: 1.0.1
 ##### Platform: Ubuntu
 
 A script that checks the forging status of your node and enables it if required. Appends a new log entry each time it is run. 
 
-Only compatible with Lisk Core 1.0.1 and up.
+Only compatible with Lisk Core 1.0 and up.
 
 ## Installation & configuration
 ```

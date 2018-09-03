@@ -1,6 +1,7 @@
 import json
 import datetime 
 import requests
+import os
 
 
 # Change to custom address if not using local node
@@ -39,7 +40,7 @@ def main():
 		message = "Forging was disabled. Toggled status to 'true'."
 
 
-	with open("lisk-autotoggle.log", "a") as text_file:
+	with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "lisk-autotoggler.log"), "a") as text_file:
 		text_file.write("%s - %s\n" % (datetime.datetime.now(), message))
 	
 	

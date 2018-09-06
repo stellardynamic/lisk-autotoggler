@@ -12,7 +12,7 @@ node = 'http://127.0.0.1'
 # Betanet = :5000
 network_port = ':8000'
 
-# Password used while creating encrypted password
+# Password used while creating encrypted passphrase
 password = ''
 
 # Publickey of your address
